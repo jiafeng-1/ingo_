@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // Debug 1，这里也可以配置多个Debug任务，这其实和tasks.json很类似
+        {
+            "name": "first_exe", // Debug任务名
+            "type": "cppdbg",    // 类型
+            "request": "launch",
+            "program": "${workspaceFolder}/build/main/tcp", // 需要调试的应用程序，这是需要按照你的需要进行调整的
+            "args": [], // 传递参数给应用程序
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // 当前工作路径
+            "environment": [{"name": "PATH","value": "${PATH};${workspaceFolder}/lib;${workspaceFolder}/build/main"}], // 这里需要特别注意，这里要把应用程序运行需要的动态链接库的路径，放进来，这里也需要你根据自己需要进行调整，我在这里给出一个示范
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // 开启debug调试前编译，注释掉关闭
+            "preLaunchTask": "Build"
+        }
+    ]
+}

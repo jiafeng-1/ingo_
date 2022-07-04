@@ -1,0 +1,54 @@
+{
+    // 这里配置了三个Task
+    "tasks": [
+        // Task 1：生成build文件夹
+        {
+            "type": "shell", // 这里决定了task的类型，shell类型就是在命令行里运行command的命令，还有一种类型是“process”，这里就不介绍了
+            "label": "mk_build", // task的名字
+            "command": "mkdir", // 需要被运行的命令
+            "args": ["build"], // 传递给command的参数
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        // Task 2：运行cmake
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                ".."
+                // "-G",
+                // "MinGW Makefiles", // 这里必须定义生成器，否则默认cmake生成的是VS Studio可编译的工程
+                // "${workspaceFolder}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/build", // 工作路径，就是说cmake的输出都会放在${workspaceFolder}/build文件夹下
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        // Task 3：运行make
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "make",
+            "args": ["-j4"],
+            "options": {
+                "cwd": "${workspaceFolder}/build",
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build", // 这里说明这个任务时输入"build"类型的，也就是说明，这是一个生成任务
+                "isDefault": true
+            },
+            "dependsOn": [
+                "cmake" // 这里设置，说明了这个任务一定要在Task “cmake”执行之后方可执行
+            ]
+        }
+    ],
+    "version": "2.0.0"
+}

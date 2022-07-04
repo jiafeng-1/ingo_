@@ -1,0 +1,80 @@
+
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) ",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/time",    //更换为自己的软件名称
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "preLaunchTask": "build",               //重点，这个是模板没有的选项，须额外加入 调试前进行预执行任务，进行build编译
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+        ],
+        "sourceFileMap": {
+            "/build/glibc-D9JkfM": "/usr/src/glibc"
+        
+            },
+    },
+    { 
+        "name": "(gdb) Attach",
+        "type": "cppdbg",
+        "request": "attach",
+        "program": "${workspaceFolder}/build",            //这个改下
+        "processId": "${command:pickProcess}",
+        "MIMode": "gdb",
+        "setupCommands": [
+            {
+                "description": "Enable pretty-printing for gdb",
+                "text": "-enable-pretty-printing",
+                "ignoreFailures": true
+            }
+        ],
+        "sourceFileMap": {
+            "/build/glibc-D9JkfM": "/usr/src/glibc"
+        
+            }
+    }
+]
+}
+
+// {
+//     // 使用 IntelliSense 了解相关属性。 
+//     // 悬停以查看现有属性的描述。
+//     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "(gdb) ",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "program": "${workspaceFolder}/time_alignment",
+//             "args": [],
+//             "stopAtEntry": false,
+//             "cwd": "${workspaceFolder}",
+//             "environment": [],
+//             "externalConsole": false,
+//             "MIMode": "gdb",
+//             "setupCommands": [
+//                 {
+//                     "description": "为 gdb 启用整齐打印",
+//                     "text": "-enable-pretty-printing",
+//                     "ignoreFailures": true
+//                 }
+//             ]
+//         }
+//     ]
+// }
