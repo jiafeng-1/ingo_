@@ -20,7 +20,7 @@ target=test
 
 # CUR_DIR := $(shell pwd)
 CUR_DIR=.
-	@echo "CUR_DIR=$(CUR_DIR)"
+# @echo "CUR_DIR=$(CUR_DIR)"
 SRC_DIR=$(CUR_DIR)/src
 INCLUDE_DIR=-I$(CUR_DIR)/include 
 MAIN_DIR=$(CUR_DIR)/main
@@ -45,7 +45,7 @@ ifeq ($(CC), gcc)
 
 srcs=$(wildcard $(SRC_DIR)/*.c)   \
    $(wildcard $(MAIN_DIR)/*.c) 
-	@echo "srcs=$(srcs)"
+@echo "srcs=$(srcs)"
 #目标文件
 objs=$(patsubst %.c, %.o, $(srcs))
 
@@ -57,7 +57,7 @@ endif
 
 $(target):$(objs)
 	@echo $(srcs)
-	$(CC) -o $(target) $(objs) 
+	$(CC) -o $(target) $(objs) $(CCFLAG)
 	@make clean
 
 $(objs):%.o:%.c
@@ -87,7 +87,7 @@ endif
 
 $(target):$(objs)
 	@echo $(srcs)
-	$(CC) -o $(target) $(objs) 
+	$(CC) -o $(target) $(objs) $(CCFLAG)
 	@make clean
 
 $(objs):%.o:%.cpp

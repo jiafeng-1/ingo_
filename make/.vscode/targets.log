@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+Makefile:23: *** recipe commences before first target.  Stop.
+
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -6,11 +8,11 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul  8 07:19:26 2022
+# Make data base, printed on Thu Jul  7 02:48:08 2022
 
 # Variables
 
-# 'override' directive
+# environment
 GNUMAKEFLAGS := 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
@@ -24,6 +26,8 @@ DESKTOP_SESSION = ubuntu
 XDG_SESSION_TYPE = x11
 # environment
 VSCODE_LOG_NATIVE = false
+# makefile (from 'Makefile', line 11)
+SLIBRARY = -l 
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -35,7 +39,7 @@ GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=fcitx
 # makefile
-CURDIR := /home/jiafeng/ingo
+CURDIR := /home/jiafeng/ingo/make
 # makefile
 SHELL = /bin/sh
 # environment
@@ -45,11 +49,13 @@ VTE_VERSION = 5202
 # environment
 VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn","_translationsConfigFile":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/tcf.json","_cacheRoot":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn","_resolvedLanguagePackCoreLocation":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/dfd34e8260c270da74b5c2d86d61aee4b6d56977","_corruptedFile":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:64153
+_ = /usr/bin/code
+# environment
+JOURNAL_STREAM = 9:64476
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# makefile
-MAKEFILE_LIST := 
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # environment
 JAVA_HOME = /usr/lib/jvm/Java-8-openjdk-amd64
 # automatic
@@ -63,27 +69,27 @@ MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=e5629d099ce8cee33c140f9e62c79ea8
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=9901cca7e2d05f77c7c7b03962c55954
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-_ = /usr/bin/code
-# environment
-MANAGERPID = 3172
+MANAGERPID = 3568
 # environment
 CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
-VSCODE_CWD = /home/jiafeng/ingo
+VSCODE_CWD = /home/jiafeng/ingo/make
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 PATH = /home/jiafeng/anaconda3/bin:/home/jiafeng/anaconda3/condabin:/usr/lib/jvm/Java-8-openjdk-amd64/bin:/usr/lib/jvm/Java-8-openjdk-amd64/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# makefile (from 'Makefile', line 22)
+CUR_DIR = .
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/3220,unix/ubuntu:/tmp/.ICE-unix/3220
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/3598,unix/ubuntu:/tmp/.ICE-unix/3598
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -97,7 +103,9 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = b5e69d7a9f5d424fbc84ffbaf08bb217
+INVOCATION_ID = 4c248a4ae7804dd7837e011c19b98de1
+# makefile (from 'Makefile', line 9)
+LIB = no
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -117,11 +125,11 @@ GTK_IM_MODULE = fcitx
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/jiafeng/ingo
+PWD = /home/jiafeng/ingo/make
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 3316
+SSH_AGENT_PID = 3686
 # environment
 PKG_CONFIG_PATH = :/usr/local/lib/pkgconfig
 # environment
@@ -170,10 +178,12 @@ MAKECMDGOALS := all
 QT_IM_MODULE = fcitx
 # environment
 SHLVL = 1
+# makefile (from 'Makefile', line 6)
+CC = g++
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-286285fa-7852-44f7-95c2-2cc60a9fb282.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-38e20074-32d6-4fd9-a91e-6547ff231242.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -190,6 +200,8 @@ CLASSPATH = /usr/lib/jvm/Java-8-openjdk-amd64/lib:/usr/lib/jvm/Java-8-openjdk-am
 CONDA_SHLVL = 1
 # default
 MAKE_COMMAND := make
+# environment
+OLDPWD = /home/jiafeng/jiafeng/FFMPEG
 # default
 .VARIABLES := 
 # automatic
@@ -210,6 +222,8 @@ GDK_BACKEND = x11
 +F = $(notdir $+)
 # environment
 NO_AT_BRIDGE = 1
+# makefile (from 'Makefile', line 14)
+target = test
 # environment
 QT_ACCESSIBILITY = 1
 # environment
@@ -229,11 +243,11 @@ CONDA_PYTHON_EXE = /home/jiafeng/anaconda3/bin/python
 # environment
 QT4_IM_MODULE = fcitx
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e9d4f2d3_6b40_47e7_b2ea_bdb62a74e6a0
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/a8a4cd5f_83da_4166_be05_4da79fb4a0a0
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.70
+GNOME_TERMINAL_SERVICE = :1.74
 # default
 SUFFIXES := 
 # environment
@@ -251,23 +265,24 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 26973
+VSCODE_PID = 51290
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=e5629d099ce8cee33c140f9e62c79ea8
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=9901cca7e2d05f77c7c7b03962c55954
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
-# Load=123/1024=12%, Rehash=0, Collisions=18/145=12%
+# Load=129/1024=13%, Rehash=0, Collisions=16/142=11%
 
 # Pattern-specific Variable Values
 
 # No pattern-specific variable values.
+ 
 
 # Directories
 
-# . (device 2049, inode 6162681): 12 files, no impossibilities.
+# . (device 2049, inode 6203511): 4 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 4 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -278,26 +293,15 @@ _CE_CONDA =
 # Not a target:
 all:
 #  Command line target.
-#  Implicit rule search has been done.
-#  File does not exist.
- 
-make: *** No rule to make target 'all'.  Stop.
-
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
-# Not a target:
-makefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 .DEFAULT:
@@ -305,27 +309,20 @@ makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-# Not a target:
-GNUmakefile:
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has been updated.
-#  Failed to be updated.
-
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# Load=4/1024=0%, Rehash=0, Collisions=0/5=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 183 B / avg = 9 B
-# current buf: size = 8162 B / used = 183 B / count = 20 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 9 / storage = 77 B / avg = 8 B
+# current buf: size = 8162 B / used = 77 B / count = 9 / avg = 8 B
 
-# strcache performance: lookups = 23 / hit rate = 13%
+# strcache performance: lookups = 13 / hit rate = 30%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=2/23=9%
-# Finished Make data base on Fri Jul  8 07:19:26 2022
+# Load=9/8192=0%, Rehash=0, Collisions=1/13=8%
+# Finished Make data base on Thu Jul  7 02:48:08 2022
 
  

@@ -2,12 +2,12 @@
 ###
  # @Author: jiafeng jiafeng@apple.com
  # @Date: 2022-07-03 21:03:23
- # @LastEditors: jiafeng jiafeng@apple.com
- # @LastEditTime: 2022-07-04 21:51:21
+ # @LastEditors: Jia Feng
+ # @LastEditTime: 2022-07-07 02:51:32
  # @FilePath: /pthread_t/Project/Project.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
-VERSION="B-0.1.0"
+VERSION="B-0.1.1"
 
 c_main="
 #include <stdio.h>\n#include <stdlib.h>\n\nint main(int argc, char *argv[])\n{\n\n\treturn 0;\n}
@@ -253,7 +253,8 @@ BUILD=1
 # 工程中版本记录文件，默认开启 设置0不开启
 PROJECT_VERSION=1
 # 工程模版存放目录
-Template=/Users/jiajipengzhuanyong/Desktop/CODE/C_Test/pthread_t/Project
+Template=/home/jiafeng/ingo
+# Template=`pwd`
 
 #                      配置End
 

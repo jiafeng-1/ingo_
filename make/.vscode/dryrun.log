@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/jiafeng/ingo/make'
+make: Leaving directory '/home/jiafeng/ingo/make'
+ 
+Makefile:23: *** recipe commences before first target.  Stop.
+
