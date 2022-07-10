@@ -2,8 +2,8 @@
 ###
  # @Author: jiafeng jiafeng@apple.com
  # @Date: 2022-07-03 21:03:23
- # @LastEditors: Jia Feng
- # @LastEditTime: 2022-07-07 02:51:32
+ # @LastEditors: jiafeng jiafeng@apple.com
+ # @LastEditTime: 2022-07-10 13:38:15
  # @FilePath: /pthread_t/Project/Project.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -16,6 +16,29 @@ c_main="
 cpp_main="
 #include <iostream>\n\nint main(int argc, char *argv[])\n{\n\n\treturn 0;\n}
 "
+
+function cat_c_main() {
+    cat << EOF >> ./main/main.c
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[])
+{
+    return 0;
+}
+EOF
+}
+
+function cat_cpp_main() {
+    cat << EOF >> ./main/main.cpp
+#include <iostream>
+int main(int argc, char *argv[])
+{
+    return 0;
+}
+EOF
+}
+
+
 
 #******************************************************#
 #               输出版本信息
@@ -132,9 +155,10 @@ function mk_C_Project () {
     mkdir -p lib/x86_64 lib/aarch64
     mkdir src 
     mkdir include
-    mkdir main && cd main && touch main.c
+    mkdir main && touch ./main/main.c
+    cat_c_main
 
-    echo -e $1 > main.c
+    # echo -e $1 > main.c
     
 }
 #******************************************************#
@@ -150,8 +174,8 @@ function mk_CPP_Project() {
     mkdir src 
     mkdir include
     mkdir main && cd main && touch main.cpp
-    
-    echo -e $1 > main.cpp
+    cat_cpp_main
+    # echo -e $1 > main.cpp
     
 }
 
@@ -253,8 +277,8 @@ BUILD=1
 # 工程中版本记录文件，默认开启 设置0不开启
 PROJECT_VERSION=1
 # 工程模版存放目录
-Template=/home/jiafeng/ingo
-# Template=`pwd`
+Template=/Users/jiajipengzhuanyong/Desktop/CODE/github/ingo
+
 
 #                      配置End
 

@@ -1,165 +1,100 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 4.1
-# Built for x86_64-pc-linux-gnu
-# Copyright (C) 1988-2014 Free Software Foundation, Inc.
-# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
-# This is free software: you are free to change and redistribute it.
-# There is NO WARRANTY, to the extent permitted by law.
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
 
-# Make data base, printed on Fri Jul  8 07:19:26 2022
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Sat Jul  9 23:34:55 2022
 
 # Variables
 
-# 'override' directive
-GNUMAKEFLAGS := 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
-DESKTOP_SESSION = ubuntu
-# default
-.SHELLFLAGS := -c
-# environment
-XDG_SESSION_TYPE = x11
+ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
-# environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
-# environment
-GDMSESSION = ubuntu
-# environment
-XMODIFIERS = @im=fcitx
+# automatic
+@F = $(notdir $@)
 # makefile
-CURDIR := /home/jiafeng/ingo
+CURDIR := /Users/jiajipengzhuanyong/Desktop/CODE/github/ingo
 # makefile
 SHELL = /bin/sh
 # environment
-JRE_HOME = /usr/lib/jvm/Java-8-openjdk-amd64/jre
+VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_translationsConfigFile":"/Users/jiajipengzhuanyong/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/tcf.json","_cacheRoot":"/Users/jiajipengzhuanyong/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn","_resolvedLanguagePackCoreLocation":"/Users/jiajipengzhuanyong/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/4af164ea3a06f701fe3e89a2bcbb421d2026b68f","_corruptedFile":"/Users/jiajipengzhuanyong/Library/Application Support/Code/clp/bbca1a7059cee8a1b93da8947fee1c4f.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
-VTE_VERSION = 5202
-# environment
-VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn","_translationsConfigFile":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/tcf.json","_cacheRoot":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn","_resolvedLanguagePackCoreLocation":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/dfd34e8260c270da74b5c2d86d61aee4b6d56977","_corruptedFile":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/corrupted.info","_languagePackSupport":true}
-# environment
-JOURNAL_STREAM = 9:64153
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+_ = /usr/bin/make
 # makefile
 MAKEFILE_LIST := 
 # environment
-JAVA_HOME = /usr/lib/jvm/Java-8-openjdk-amd64
-# automatic
-@F = $(notdir $@)
-# environment
-IM_CONFIG_PHASE = 2
-# environment
-USERNAME = jiafeng
-# environment
-MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
-# environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
-# environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=e5629d099ce8cee33c140f9e62c79ea8
-# environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-_ = /usr/bin/code
+INFOPATH = /usr/local/share/info:
 # environment
-MANAGERPID = 3172
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/w7/60cj547s2jjbxmv4zd6gfq7m0000gn/T/vscode-ipc-2befc432-a9cb-48ce-9e36-2687b59de792.sock
 # environment
-CLUTTER_IM_MODULE = xim
+VSCODE_CWD = /Users/jiajipengzhuanyong/Desktop/CODE/github/ingo
 # environment
-LESSOPEN = | /usr/bin/lesspipe %s
+Apple_PubSub_Socket_Render = /private/tmp/com.apple.launchd.ByGuOjuXXU/Render
 # environment
-VSCODE_CWD = /home/jiafeng/ingo
-# default
-MAKE_HOST := x86_64-pc-linux-gnu
-# environment
-PATH = /home/jiafeng/anaconda3/bin:/home/jiafeng/anaconda3/condabin:/usr/lib/jvm/Java-8-openjdk-amd64/bin:/usr/lib/jvm/Java-8-openjdk-amd64/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-# environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
-# environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/3220,unix/ubuntu:/tmp/.ICE-unix/3220
-# environment
-XDG_RUNTIME_DIR = /run/user/1000
-# environment
-TEXTDOMAIN = im-config
-# environment
-CONDA_PREFIX = /home/jiafeng/anaconda3
-# environment
-XDG_MENU_PREFIX = gnome-
+PATH = /usr/local/bin:/usr/local/sbin:/Users/jiajipengzhuanyong/Desktop/贾凨/anaconda3/bin:/Users/jiajipengzhuanyong/Desktop/贾凨/anaconda3/condabin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MacVim.app/Contents/bin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/MacVim.app/Contents/bin:/usr/local/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# environment
-INVOCATION_ID = b5e69d7a9f5d424fbc84ffbaf08bb217
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
-# environment
-XDG_SESSION_DESKTOP = ubuntu
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.DJDxIonQqI/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = :0
+DISPLAY = /private/tmp/com.apple.launchd.v4s7gKkTc3/org.macosforge.xquartz:0
 # environment
-CONDA_EXE = /home/jiafeng/anaconda3/bin/conda
-# environment
-GTK_IM_MODULE = fcitx
+CONDA_EXE = /Users/jiajipengzhuanyong/Desktop/贾凨/anaconda3/bin/conda
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/jiafeng/ingo
+PWD = /Users/jiajipengzhuanyong/Desktop/CODE/github/ingo
 # environment
-XDG_SEAT = seat0
+HOMEBREW_CELLAR = /usr/local/Cellar
 # environment
-SSH_AGENT_PID = 3316
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-PKG_CONFIG_PATH = :/usr/local/lib/pkgconfig
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
-# environment
-GTK_MODULES = gail:atk-bridge
+MANPATH = /usr/local/share/man:
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/jiafeng
-# environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
+HOME = /Users/jiajipengzhuanyong
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/jiafeng/.config/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
+VSCODE_CODE_CACHE_PATH = /Users/jiajipengzhuanyong/Library/Application Support/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
-LOGNAME = jiafeng
+LOGNAME = jiajipengzhuanyong
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 CONDA_PROMPT_MODIFIER = (base) 
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# default
-MAKE_VERSION := 4.1
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-XDG_VTNR = 2
-# environment
-MAKELEVEL := 0
-# environment
 CONDA_DEFAULT_ENV = base
+# environment
+XPC_FLAGS = 0x0
 # environment
 COLORTERM = truecolor
 # default
@@ -167,97 +102,93 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-QT_IM_MODULE = fcitx
+SHLVL = 3
 # environment
-SHLVL = 1
+TERM_SESSION_ID = w0t0p0:9D9F9950-6EB8-4673-88B2-70518105E60A
+# default
+MAKE_VERSION := 3.81
 # environment
-GNOME_SHELL_SESSION_MODE = ubuntu
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-286285fa-7852-44f7-95c2-2cc60a9fb282.sock
-# environment
-XDG_SESSION_ID = 2
-# environment
-USER = jiafeng
+USER = jiajipengzhuanyong
 # makefile
 .DEFAULT_GOAL := 
 # environment
-XDG_CURRENT_DESKTOP = Unity
-# environment
-CLASSPATH = /usr/lib/jvm/Java-8-openjdk-amd64/lib:/usr/lib/jvm/Java-8-openjdk-amd64/jre/lib:
+HOMEBREW_BOTTLE_DOMAIN = https://mirrors.ustc.edu.cn/homebrew-bottles/bottles
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 CONDA_SHLVL = 1
 # default
-MAKE_COMMAND := make
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# environment
+TERM_PROGRAM = iTerm.app
 # default
 .VARIABLES := 
+# environment
+TMPDIR = /var/folders/w7/60cj547s2jjbxmv4zd6gfq7m0000gn/T/
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-36a6c601-1.66.2-main.sock
+VSCODE_IPC_HOOK = /Users/jiajipengzhuanyong/Library/Application Support/Code/1.68.0-main.sock
 # makefile
-MAKEFLAGS = pqrR
+MAKEFLAGS = Rrqp
 # environment
-MFLAGS = -pqrR
+MFLAGS = -Rrqp
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# environment
+TERM_PROGRAM_VERSION = 3.2.9
+# environment
+XPC_SERVICE_NAME = 0
+# environment
+HOMEBREW_PREFIX = /usr/local
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
-# environment
-GDK_BACKEND = x11
 # automatic
 +F = $(notdir $+)
 # environment
-NO_AT_BRIDGE = 1
+ITERM_SESSION_ID = w0t0p0:9D9F9950-6EB8-4673-88B2-70518105E60A
 # environment
-QT_ACCESSIBILITY = 1
+HOMEBREW_REPOSITORY = /usr/local/Homebrew
 # environment
-DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
+COLORFGBG = 7;0
 # environment
-TEXTDOMAINDIR = /usr/share/locale/
+__CF_USER_TEXT_ENCODING = 0x1F5:0x19:0x34
+# environment
+COMMAND_MODE = unix2003
 # default
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
 # environment
+ITERM_PROFILE = Default
+# environment
 LC_ALL = C
 # environment
-DBUS_STARTER_BUS_TYPE = session
+CONDA_PYTHON_EXE = /Users/jiajipengzhuanyong/Desktop/贾凨/anaconda3/bin/python
 # environment
-CONDA_PYTHON_EXE = /home/jiafeng/anaconda3/bin/python
-# environment
-QT4_IM_MODULE = fcitx
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e9d4f2d3_6b40_47e7_b2ea_bdb62a74e6a0
+SECURITYSESSIONID = 186a6
 # automatic
 ^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.70
 # default
 SUFFIXES := 
 # environment
 _CE_M = 
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# default
-.RECIPEPREFIX := 
 # environment
-LANG = C
+MAKELEVEL := 0
+# environment
+CONDA_PREFIX = /Users/jiajipengzhuanyong/Desktop/贾凨/anaconda3
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 26973
-# environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=e5629d099ce8cee33c140f9e62c79ea8
+VSCODE_PID = 313
 # environment
 _CE_CONDA = 
+# environment
+LANG = C
 # variable set hash-table stats:
-# Load=123/1024=12%, Rehash=0, Collisions=18/145=12%
+# Load=88/1024=9%, Rehash=0, Collisions=3/113=3%
 
 # Pattern-specific Variable Values
 
@@ -265,7 +196,7 @@ _CE_CONDA =
 
 # Directories
 
-# . (device 2049, inode 6162681): 12 files, no impossibilities.
+# . (device 16777220, inode 31632965): 12 files, no impossibilities.
 
 # 12 files, no impossibilities in 1 directories.
 
@@ -277,27 +208,38 @@ _CE_CONDA =
 
 # Not a target:
 all:
-#  Command line target.
+#  Command-line target.
 #  Implicit rule search has been done.
 #  File does not exist.
- 
-make: *** No rule to make target 'all'.  Stop.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 makefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .DEFAULT:
@@ -307,25 +249,29 @@ makefile:
 
 # Not a target:
 GNUmakefile:
+#  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
 #  Failed to be updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
 # VPATH Search Paths
 
-# No 'vpath' search paths.
+# No `vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# No general (`VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 183 B / avg = 9 B
-# current buf: size = 8162 B / used = 183 B / count = 20 / avg = 9 B
+# # of strings in strcache: 0
+# # of strcache buffers: 0
+# strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# strcache performance: lookups = 23 / hit rate = 13%
-# hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=2/23=9%
-# Finished Make data base on Fri Jul  8 07:19:26 2022
+# Finished Make data base on Sat Jul  9 23:34:55 2022
 
  
+make: *** No rule to make target `all'.  Stop.
+

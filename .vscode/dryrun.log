@@ -1,6 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/jiafeng/ingo'
-make: Leaving directory '/home/jiafeng/ingo'
+make: Entering directory `/Users/jiajipengzhuanyong/Desktop/CODE/github/ingo'
+make: Leaving directory `/Users/jiajipengzhuanyong/Desktop/CODE/github/ingo'
  
 make: *** No targets specified and no makefile found.  Stop.
 

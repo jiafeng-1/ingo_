@@ -1,8 +1,8 @@
 <!--
  * @Author: jiafeng jiafeng@apple.com
  * @Date: 2022-07-02 18:26:45
- * @LastEditors: Jia Feng
- * @LastEditTime: 2022-07-07 02:50:21
+ * @LastEditors: jiafeng jiafeng@apple.com
+ * @LastEditTime: 2022-07-10 13:43:10
  * @FilePath: /pthread_t/Project/readme.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -149,6 +149,3 @@ exit
 ```
 
 
-B-0.1.1
-新版本,修复了Makefile模板潜在问题.$(CC) -o $(target) $(objs) --> $(CC) -o $(target) $(objs) $(CCFLAG)
-注释掉了两条打印语句,解决了Makefile:48: *** recipe commences before first target.  Stop.
