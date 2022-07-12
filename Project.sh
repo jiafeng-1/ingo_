@@ -277,7 +277,7 @@ BUILD=1
 # 工程中版本记录文件，默认开启 设置0不开启
 PROJECT_VERSION=1
 # 工程模版存放目录
-Template=/Users/jiajipengzhuanyong/Desktop/CODE/github/ingo
+Template=/home/jiafeng/ingo
 
 
 #                      配置End
