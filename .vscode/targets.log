@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 11 23:07:52 2022
+# Make data base, printed on Mon Jul 11 23:16:40 2022
 
 # Variables
 
@@ -175,7 +175,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-bde9f55c-bb63-4b7e-9870-e57f95fef886.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9021c752-1b83-4ff5-a6c0-625fd471eeed.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -239,7 +239,7 @@ QT4_IM_MODULE = fcitx
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b5d4acc5_1167_476f_846b_29dd0ddf3532
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/86a469f7_7b56_4a11_b8be_bc251a4833b5
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -336,6 +336,6 @@ GNUmakefile:
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=2/24=8%
-# Finished Make data base on Mon Jul 11 23:07:52 2022
+# Finished Make data base on Mon Jul 11 23:16:40 2022
 
  

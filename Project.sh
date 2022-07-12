@@ -2,8 +2,8 @@
 ###
  # @Author: jiafeng jiafeng@apple.com
  # @Date: 2022-07-03 21:03:23
- # @LastEditors: jiafeng jiafeng@apple.com
- # @LastEditTime: 2022-07-10 13:38:15
+ # @LastEditors: Jia Feng
+ # @LastEditTime: 2022-07-11 23:17:55
  # @FilePath: /pthread_t/Project/Project.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -173,7 +173,7 @@ function mk_CPP_Project() {
     mkdir -p lib/x86_64 lib/aarch64
     mkdir src 
     mkdir include
-    mkdir main && cd main && touch main.cpp
+    mkdir main  && touch ./main/main.cpp
     cat_cpp_main
     # echo -e $1 > main.cpp
     
