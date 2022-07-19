@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 19 01:47:23 2022
+# Make data base, printed on Tue Jul 19 02:48:20 2022
 
 # Variables
 
@@ -167,7 +167,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5ed1b1db-ca5d-4ccd-a237-3bf6cbcb93a8.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-2ebcee1c-7143-4f0e-aecb-9402b5a30f4f.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -227,11 +227,11 @@ QT4_IM_MODULE = fcitx
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e752e59c_1eb4_4d68_8969_57327afec04a
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/4a1060a2_8da1_41e9_8461_5689370db2d2
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.1755
+GNOME_TERMINAL_SERVICE = :1.2499
 # default
 SUFFIXES := 
 # environment
@@ -275,10 +275,10 @@ _CE_CONDA =
 
 # Not a target:
 all:
-#  Command line target.
  
 make: *** No rule to make target 'all'.  Stop.
 
+#  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
@@ -324,6 +324,6 @@ GNUmakefile:
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=2/24=8%
-# Finished Make data base on Tue Jul 19 01:47:23 2022
+# Finished Make data base on Tue Jul 19 02:48:20 2022
 
  

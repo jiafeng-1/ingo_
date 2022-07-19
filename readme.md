@@ -1,8 +1,8 @@
 <!--
  * @Author: jiafeng jiafeng@apple.com
  * @Date: 2022-07-02 18:26:45
- * @LastEditors: jiafeng jiafeng@apple.com
- * @LastEditTime: 2022-07-10 13:43:10
+ * @LastEditors: Jia Feng
+ * @LastEditTime: 2022-07-19 03:00:43
  * @FilePath: /pthread_t/Project/readme.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -26,6 +26,7 @@
 |make |makefile文件模版|
 
 软件整体文件说明
+```
 .
 ├── Project.sh                  --->        软件主脚本
 ├── auto    
@@ -37,12 +38,12 @@
 ├── make
 │   └── Makefile                --->        工程根目录Makefile文件
 └── readme.md
-
+```
 ###版本说明
 
 
 ### cpp工程模版目录
-
+```
 cpp工程cmake编译
 .
 ├── .vscode
@@ -78,7 +79,7 @@ cpp工程make编译
 ├── main
 │   └── main.cpp
 └── src
-
+```
 注：c语言版本与cpp版本目录结构相同，只是生成的main中的文件不同
 
 ### 安装软件
