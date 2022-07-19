@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 11 23:16:40 2022
+# Make data base, printed on Tue Jul 19 01:47:23 2022
 
 # Variables
 
@@ -47,7 +45,7 @@ VTE_VERSION = 5202
 # environment
 VSCODE_NLS_CONFIG = {"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn","_translationsConfigFile":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/tcf.json","_cacheRoot":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn","_resolvedLanguagePackCoreLocation":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/dfd34e8260c270da74b5c2d86d61aee4b6d56977","_corruptedFile":"/home/jiafeng/.config/Code/clp/1a7316c624e1dd66d26cf581ee0fb4ca.zh-cn/corrupted.info","_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:68819
+_ = /usr/bin/code
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile
@@ -69,10 +67,6 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-_ = /usr/bin/code
-# environment
-MANAGERPID = 3649
-# environment
 CLUTTER_IM_MODULE = xim
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
@@ -85,7 +79,7 @@ PATH = /home/jiafeng/anaconda3/bin:/home/jiafeng/anaconda3/condabin:/usr/local/f
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/3679,unix/ubuntu:/tmp/.ICE-unix/3679
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/3230,unix/ubuntu:/tmp/.ICE-unix/3230
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -98,8 +92,6 @@ XDG_MENU_PREFIX = gnome-
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# environment
-INVOCATION_ID = 989ff70d402e402b96ce35c35b1c6221
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -123,7 +115,7 @@ PWD = /home/jiafeng/ingo
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 3779
+SSH_AGENT_PID = 3318
 # environment
 PKG_CONFIG_PATH = :/usr/local/lib/pkgconfig
 # environment
@@ -175,7 +167,7 @@ SHLVL = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9021c752-1b83-4ff5-a6c0-625fd471eeed.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5ed1b1db-ca5d-4ccd-a237-3bf6cbcb93a8.sock
 # environment
 XDG_SESSION_ID = 2
 # environment
@@ -190,8 +182,6 @@ CLASSPATH = /usr/lib/jvm/Java-8-openjdk-amd64/lib:/usr/lib/jvm/Java-8-openjdk-am
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 CONDA_SHLVL = 1
-# environment
-ZEITGEIST_DATA_PATH = /home/jiafeng/.local/share/zeitgeist
 # default
 MAKE_COMMAND := make
 # environment
@@ -231,19 +221,17 @@ MAKEFILES :=
 # environment
 LC_ALL = C
 # environment
-DBUS_STARTER_BUS_TYPE = session
-# environment
 CONDA_PYTHON_EXE = /home/jiafeng/anaconda3/bin/python
 # environment
 QT4_IM_MODULE = fcitx
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/86a469f7_7b56_4a11_b8be_bc251a4833b5
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e752e59c_1eb4_4d68_8969_57327afec04a
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.1130
+GNOME_TERMINAL_SERVICE = :1.1755
 # default
 SUFFIXES := 
 # environment
@@ -263,13 +251,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 96098
-# environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=e36446be3d679f65df56718b62cb6f55
+VSCODE_PID = 4128
 # environment
 _CE_CONDA = 
 # variable set hash-table stats:
-# Load=128/1024=12%, Rehash=0, Collisions=18/150=12%
+# Load=122/1024=12%, Rehash=0, Collisions=17/144=12%
 
 # Pattern-specific Variable Values
 
@@ -277,7 +263,6 @@ _CE_CONDA =
 
 # Directories
 
- 
 # . (device 2049, inode 6162681): 13 files, no impossibilities.
 
 # 13 files, no impossibilities in 1 directories.
@@ -291,6 +276,9 @@ _CE_CONDA =
 # Not a target:
 all:
 #  Command line target.
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
@@ -336,6 +324,6 @@ GNUmakefile:
 # strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=2/24=8%
-# Finished Make data base on Mon Jul 11 23:16:40 2022
+# Finished Make data base on Tue Jul 19 01:47:23 2022
 
  

@@ -1,4 +1,4 @@
-cproject(main)
+project(main)
 # include_directories(
 #     "/home/jiafeng/jiafeng/FFMPEG/dh_rtmp/include")
 # link_directories("/home/jiafeng/jiafeng/FFMPEG/dh_rtmp/lib/x86_64")

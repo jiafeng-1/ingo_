@@ -21,7 +21,7 @@
                 }
             ],
             // 开启debug调试前编译，注释掉关闭
-            "preLaunchTask": "Build"
+            "preLaunchTask": "build"
         }
     ]
 }
