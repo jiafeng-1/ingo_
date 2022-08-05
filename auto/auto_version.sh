@@ -1,8 +1,8 @@
 ###
  # @Author: jiafeng jiafeng@apple.com
  # @Date: 2022-06-30 21:56:05
- # @LastEditors: jiafeng jiafeng@apple.com
- # @LastEditTime: 2022-07-02 09:35:55
+ # @LastEditors: Jia Feng
+ # @LastEditTime: 2022-08-04 20:04:38
  # @FilePath: /pthread_t/auto_version.sh
  # @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 ### 
@@ -25,10 +25,10 @@ function addition_version() {
     while :
     do
         echo_hellp
-        read input
+        read -e input
         if [[ ${input} == '-V' ]] || [[ ${input} == '-v' ]]; then
             echo "添加版本号,按下回车保存"
-            read input
+            read -e input
             cat << EOF >> ../version
     Version: ${input}
 
@@ -37,7 +37,7 @@ EOF
         fi
         if [[ ${input} == '-D' ]] || [[ ${input} == '-d' ]]; then
             echo "添加描述,按下回车保存"
-            read input
+            read -e input
             cat << EOF >> ../version
 
     Describe: ${input}
